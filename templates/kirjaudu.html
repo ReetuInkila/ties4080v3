@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kirjaudu</title>
+</head>
+
+<body>
+    <h1>Kirjaudu</h1>
+    <form action="{{request.base_url}}" method="POST">
+        <p>
+            <label>Kilpailu 
+                <select id="kilpailut" name="kilpailut">
+                    <option value="joku">Volvo</option>
+                    <option value="joku2">Saab</option>
+              </select>
+            </label>
+        </p>
+        <p>
+            <label>Tunnus <input type="text" name="tunnus" /></label>
+        </p>
+        <p>
+            <label>Salasana <input type="password" name="salasana" /></label>
+        </p>
+        <p>
+            <input type="submit" name="laheta" value="Kirjaudu " />
+        </p>
+    </form>
+</body>
+
+</html>
